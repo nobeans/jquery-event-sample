@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>JQuery Event Sample</title>
+</head>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<!--
+<script type="text/javascript" src="event.js"></script>
+-->
+<script type="text/javascript" src="legacy.js"></script>
+<body>
+
+<h1>独自イベントによる状態制御のサンプル</h1>
+
+<h2>メインフォーム的な:</h2>
+<form id="main-form" style="border: 1px dotted #aaa; padding: 5px">
+  <div>
+    <label>最後のイベント: <input id="main-form__textfield" type="text" name="textfiled" value="なし"/></label>
+  </div>
+  <div>
+    <input id="main-form__buttonA" name="buttonA" type="button" value="何かを更新する"/>
+    <input id="main-form__buttonB" name="buttonB" type="button" value="何かを停止する"/>
+  </div>
+</form>
+
+<h2>上と同じような処理をするための別の見せ方的な:</h2>
+<form id="sub-form" style="border: 1px dotted #aaa; padding: 5px">
+  <div id="sub-form__current-status">初期化中...</div>
+  <div>
+    <input id="sub-form__buttonA" name="buttonA" type="button" value="こっちからも何かを更新する"/>
+    <input id="sub-form__buttonB" name="buttonB" type="button" value="こっちからも何かを停止する"/>
+  </div>
+</form>
+
+</body>
+</html>
